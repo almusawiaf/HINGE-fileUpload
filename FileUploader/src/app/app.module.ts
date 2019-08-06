@@ -1,16 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserModule }  from '@angular/platform-browser';
+import { MatButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { MatFileUploadModule } from 'angular-material-fileupload';
 
 @NgModule({
+  imports: [
+    MatButtonModule,
+    BrowserModule,
+    MatFileUploadModule
+  ],
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
