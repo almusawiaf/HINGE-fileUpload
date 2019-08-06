@@ -4,12 +4,14 @@ import { MatButtonModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { MatFileUploadModule } from 'angular-material-fileupload';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   imports: [
     MatButtonModule,
     BrowserModule,
-    MatFileUploadModule
+    MatFileUploadModule,
+    HttpClientModule
   ],
   declarations: [
     AppComponent
