@@ -2,11 +2,8 @@ const express = require('express')
 
 const app = express()
 
-
-app.use('/api/files',(req, res, next)=>{
-    const files = req.target.files;
-
-    res.json(files)
+app.post('/api/files', (req, res, next)=>{
+    console.log('this is the data we got', req.body)
 })
 
 module.exports = app; 
