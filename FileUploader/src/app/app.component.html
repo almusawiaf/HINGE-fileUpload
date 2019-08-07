@@ -1,4 +1,15 @@
-<h1>File Upload</h1>
+<!-- <h1>File Upload</h1>
 <input type="file" (change)="onFileSelected($event)">
 
-<button type="button" (click)="onUpload()">Upload</button>
+<button type="button" (click)="onUpload()">Upload</button> -->
+
+
+<!-- version two  -->
+<form ref='uploadForm' 
+      id='uploadForm' 
+      action='http://localhost:8000/upload' 
+      method='post' 
+      encType="multipart/form-data">
+        <input type="file" name="sampleFile" />
+        <input type='submit' value='Upload!' />
+    </form>   
